@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">helloAndroid</string>
+    <string name="hello_word">hello world</string>
+    <string name="message">欢迎来到英雄联盟学院</string>
+</resources>

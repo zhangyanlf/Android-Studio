@@ -1,0 +1,52 @@
+1.界面布局
+2.实现Activity的功能
+    1).定义所有需要操作的试图对象并初始化
+    2).给试图社会监听
+    3).在回调方法中实现逻辑
+
+3. 实现一般启动
+    1).定义好界面二
+        1).布局
+        2).定义Activity类
+        3).配置
+        4).重写onCreate(),并加载布局
+    2).启动界面二
+        1).创建Intent对象(显示)
+        2).通过Intent携带额外数据
+        3).启动Activity
+
+        4).得到intent
+        5).通过intent读取额外数据
+        6).显示到RditText
+
+4.实现一般返回
+    1).在显示Second界面时,Main界面其实存在,只是盖住了
+    2).关闭当前页面
+
+
+Activity 生面周期之界面的四种状态
+    1).运行状态:可见也可操作
+    2).暂停状态:可见但不可操作
+    3).停止状态:不可见,但对象存在
+    4).死亡状态:对象不存在
+
+Activity的声明周期回调方法
+    1).界面从"死亡"-->"运行"
+        创建对象-->onCreate()-->onStart()-->onResume()
+    2).界面从"运行"-->"死亡"
+        onPause()-->onStop()-->onDestory()
+    3).界面从"运行"-->"停止"
+        onPause()-->onStop()
+    4).界面从"停止"-->"运行"
+        onRestart()-->onStart()-->onResume()
+    5).界面从"运行"-->"暂停"
+        onPause()
+    6).界面从"暂停"-->"运行"
+        onResume()
+
+
+在Android中,系统用Task Stack(Back Stack)结构来存储管理启动的Activity对象
+
+一个应用启动,系统就会为其创建一个对应的Task Stack来存储管理改应用的Activity对象
+
+只有最上面的任务栈栈顶的Activity才能显示在窗口中
