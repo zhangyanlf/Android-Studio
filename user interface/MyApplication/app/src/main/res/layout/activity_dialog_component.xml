@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dialog_component"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.apple.component.DialogComponentActivity">
+
+
+    <Button
+        android:text="显示一般AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_test_ad"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="showAD"/>
+
+    <Button
+            android:text="显示单选列表AlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_test_ad2"
+            android:onClick="showLD"
+        android:layout_below="@+id/btn_test_ad"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="显示圆形进度ProgressDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_test_ypd"
+        android:onClick="showYPD"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/btn_test_ad3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="显示TimePickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_test_tpd"
+        android:onClick="showTPD"
+        android:layout_below="@+id/btn_test_spd"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:text="显示自定义AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_test_ad3"
+        android:onClick="showCD"
+        android:layout_below="@+id/btn_test_ad2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="显示DataPickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_test_dpd"
+        android:onClick="showDPD"
+        android:layout_below="@+id/btn_test_tpd"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="显示水平进度ProgressDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_test_spd"
+        android:onClick="showSPD"
+        android:layout_below="@+id/btn_test_ypd"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
